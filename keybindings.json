@@ -1,0 +1,105 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd-`",
+        "command": "workbench.action.navigateBack"
+    },
+    // file tree
+    {
+        "key": "cmd-e",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.files.action.focusFilesExplorer"
+            ]
+        },
+        "when": "!sideBarFocus"
+    },
+    {
+        "key": "cmd-e",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.focusActiveEditorGroup"
+            ]
+        },
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "cmd-e",
+        "when": " editorTextFocus && foldersViewVisible",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "typescript.removeUnusedImports"
+    },
+    {
+        "key": "c a",
+        "command": "editor.action.codeAction",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "g r",
+        "command": "editor.action.goToReferences",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "g g",
+        "command": "runCommands",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+        "args": {
+            "commands": [
+                "workbench.view.scm",
+                "workbench.scm.focus"
+            ]
+        }
+    },
+    {
+        "key": "space space",
+        "command": "editor.action.showHover",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "ctrl-r",
+        "command": "workbench.action.openRecent",
+        "when": "!inQuickOpen"
+    },
+    {
+        "key": "cmd-b",
+        "command": "workbench.action.gotoSymbol",
+    },
+    {
+        "key": "cmd-g",
+        "command": "workbench.action.gotoLine",
+    },
+    // Split vertical
+    // switch editor splits
+    {
+        "key": "cmd-2",
+        "command": "workbench.action.nextEditor",
+    },
+    {
+        "key": "cmd-1",
+        "command": "workbench.action.previousEditor",
+    },
+    {
+        "key": "cmd-left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd-right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd-3",
+        "command": "workbench.action.splitEditorRight",
+    },
+]
