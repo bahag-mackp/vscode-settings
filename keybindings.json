@@ -84,22 +84,22 @@
     // switch editor splits
     {
         "key": "cmd-2",
-        "command": "workbench.action.nextEditor",
+        "command": "workbench.action.nextEditorInGroup",
     },
     {
         "key": "cmd-1",
-        "command": "workbench.action.previousEditor",
+        "command": "workbench.action.previousEditorInGroup",
     },
     {
-        "key": "cmd-left",
+        "key": "ctrl-1",
         "command": "workbench.action.focusLeftGroup"
     },
     {
-        "key": "cmd-right",
+        "key": "ctrl-2",
         "command": "workbench.action.focusRightGroup"
     },
     {
-        "key": "cmd-3",
+        "key": "cmd-h",
         "command": "workbench.action.splitEditorRight",
     },
 ]
